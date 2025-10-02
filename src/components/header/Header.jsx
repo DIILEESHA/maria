@@ -25,7 +25,7 @@ const Header = () => {
     "https://i.imgur.com/BlXVwKs.jpeg", // your provided image
     "https://i.imgur.com/j2XOUbU.jpeg", // sample fallback
   ];
-  const intervalMs = 1000; // 5 seconds
+  const intervalMs = 4000; // 5 seconds
   const [index, setIndex] = useState(0);
 
   // playback controls
