@@ -346,6 +346,8 @@
 
   .couplers {
     font-size: 120px;
+    margin-top: -40px;
+    margin-bottom: 20px;
     text-shadow: 1.5px 1px rgba(0, 0, 0, 0.55);
   }
 
@@ -359,6 +361,15 @@
     font-size: 70px;
   }
 
+
+
+
+  .dance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   .point {
     font-size: 20px;
   }
@@ -384,7 +395,7 @@
 @media screen and (max-width: 480px) {
   .header_container {
     padding: 70px 10px;
-    background-position: center 50%;
+    background-position: center 100%;
   }
 
   .couplers {
@@ -394,8 +405,7 @@
 
   .coupler {
     font-size: 38px;
-
-    margin-top: 30px;
+    
     text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
   }
 
