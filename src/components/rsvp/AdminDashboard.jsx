@@ -31,7 +31,7 @@ const AdminDashboard = () => {
   const [showModal, setShowModal] = useState(true);
 
   const navigate = useNavigate();
-  const adminPassword = "nikofederica2025";
+  const adminPassword = "Maria25";
 
   useEffect(() => {
     if (authenticated) {
