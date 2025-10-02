@@ -13,11 +13,11 @@ const Bottom = () => {
         </div>
         <div className="regalo_sub tom">
           <p className="bur sami">
-            We can't wait to
+            Non vediamo l’ora di
             <br />
-            share our
+            condividere con voi la nostra
             <br />
-            most important milestone with you.
+            tappa piu’ importante
           </p>
           <br />
           <h2 className="cer_title cho ">
