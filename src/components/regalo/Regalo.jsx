@@ -26,9 +26,12 @@ const Regalo = () => {
           </p>
 
           <p className="bur  cami">
-            iban:
+            <div className="iui">
+              <p className="tu">iban:</p>
+              <span className="jor">IT51O0623003413000057461581</span>
+            </div>
             <br />
-            intestato :
+            {/* intestato : */}
           </p>
         </div>
       </div>

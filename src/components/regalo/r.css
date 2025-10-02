@@ -35,7 +35,20 @@
   text-transform: uppercase;
   line-height: 200%;
   font-size: 20px;
+  /* font-family: "lato"; */
   text-align: left;
+}
+.iui{
+  /* margin-bottom: -30px; */
+  text-align: left;
+}
+.tu {
+  margin-top: 4px;
+}
+.jor {
+  font-size: 23px;
+  margin: 0 5px;
+  font-family: "poppins", sans-serif;
 }
 .sorted_img {
   width: 150px;
@@ -67,6 +80,11 @@
   margin-bottom: 100px;
   justify-content: center;
 }
+
+.iui {
+  align-items: center;
+  display: flex;
+}
 /* Tablets (≤1024px) */
 @media screen and (max-width: 1024px) {
   .regalo_grid {
@@ -81,7 +99,12 @@
   .tom {
     padding: 0 20px;
   }
-
+.iui{
+  /* margin-bottom: -30px; */
+  text-align: left;
+  display: flex;align-items: center;justify-content: center;
+  flex-direction: column;
+}
   .sami {
     font-size: 18px;
     line-height: 140%;
@@ -92,7 +115,10 @@
     line-height: 180%;
     text-align: center;
   }
-
+  .jor {
+    font-size: 20px;
+    font-size: 20px !important;
+  }
   .sorted_img {
     width: 120px;
   }
@@ -119,10 +145,10 @@
     gap: 20px;
   }
 
-  .io{
-    display:flex;
-    margin-top:40px;
-    flex-direction:column-reverse;
+  .io {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column-reverse;
   }
 
   .tom {
@@ -170,7 +196,9 @@
   .cami {
     font-size: 14px;
   }
-
+  .jor {
+    font-size: 1px !important;
+  }
   .sorted_img {
     width: 80px;
   }
