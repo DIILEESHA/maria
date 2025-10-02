@@ -41,3 +41,10 @@
   margin-bottom: 30px;
   line-height: 200%;
 }
+:where(.css-dev-only-do-not-override-1odpy5d).ant-table-wrapper
+  .ant-table-row-indent
+  + .ant-table-row-expand-icon {
+  display: none;
+  margin-top: 2.5px;
+  margin-inline-end: 8px;
+}

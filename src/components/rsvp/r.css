@@ -1,7 +1,7 @@
 .rsvp {
   background-color: #fff;
   color: var(--red);
-  text-align: center;
+  /* text-align: center; */
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -74,7 +74,7 @@
 }
 
 .input_other::placeholder {
-  font-family: "bur";
+  font-family: "lato";
   font-size: 12px;
   color: var(--red);
   font-weight: bold;
@@ -83,6 +83,15 @@
 
 .hhh {
   font-size: 15px !important;
+  width: 100%;
+}
+
+.psw {
+  text-align: left !important;
+  font-family: "bur";
+}
+.tuu {
+  margin-top: 10px;
 }
 /* Tablets (≤1024px) */
 @media screen and (max-width: 1024px) {
@@ -116,6 +125,7 @@
 
   .input_other::placeholder {
     font-size: 11px;
+
   }
 }
 
