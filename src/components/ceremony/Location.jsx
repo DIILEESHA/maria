@@ -29,7 +29,11 @@ const Location = () => {
 
           <p className="main_title taami">Castello di Faicchio</p>
 
-          <p className="bur">Via Roma , Faicchio (BN)</p>
+          <p className="bur">
+            Via Roma
+            <span style={{ fontFamily: "poppins", margin: "0 5px",fontWeight:'bold' }}>10</span>,
+            Faicchio (BN)
+          </p>
           <br />
 
           <button className="btn san">

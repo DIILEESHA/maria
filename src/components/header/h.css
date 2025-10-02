@@ -1,18 +1,120 @@
+/* ---- slideshow background layer ---- */
 .header_container {
-  background-image: url(../../assets/header.jpg);
   height: 110vh;
-  /* width: 100%; */
   position: relative;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   background-position: center;
   flex-direction: column;
   overflow: hidden;
-  background-size: cover;
   color: #fff;
+  min-height: 700px;
 }
 
+/* slides container sits below content (absolute) */
+.slides {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* each slide is an absolutely positioned background panel */
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 900ms ease, transform 900ms ease;
+  will-change: opacity, transform;
+}
+
+/* active slide fades in */
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* subtle overlay to darken image for text contrast */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.45) 60%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* make sure header content sits above slides */
+.header_grid,
+.desktop-nav,
+.header_top,
+.header_toper,
+.date_bottom,
+.mobile-nav-icon,
+.slideshow-controls {
+  position: relative;
+  z-index: 2;
+}
+
+/* small nav/dots controls */
+.slideshow-controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  pointer-events: auto;
+}
+
+/* prev/next minimal buttons */
+.nav-btn {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav-btn:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+/* dots */
+.dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.35);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.dot.active {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+/* ----- rest of your styles (kept from original) ----- */
 .mobile-nav-icon {
   display: none;
 }
@@ -55,11 +157,10 @@
 }
 .header_grid {
   display: grid;
-  /* place-items: center; */
   width: 100%;
-
   padding: 0 50px;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .header_sub {
@@ -67,7 +168,6 @@
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .don {
@@ -84,13 +184,12 @@
   font-family: "hlo";
   font-size: 300px;
   text-shadow: 5px 3px #9f9f9f86;
-
   font-weight: 400;
   line-height: 30px;
 }
 
 .coupler {
-  line-height: 250%;
+  line-height: 150%;
   text-shadow: 5px 3px #9f9f9f86;
   font-weight: 400;
   width: 100%;
@@ -103,7 +202,6 @@
 }
 .date_bottom {
   display: grid;
-
   position: absolute;
   bottom: 0px;
   right: 50px;
@@ -135,15 +233,16 @@
 .m {
   border-right-color: transparent;
   padding: 0px 0px 0 30px;
-
   border-left-color: #fff;
 }
-/* Tablets (≤1024px) */
+
+/* Responsive adjustments (kept and slightly tuned) */
 @media screen and (max-width: 1024px) {
   .header_container {
     height: auto;
     padding: 40px 20px;
     text-align: center;
+    min-height: 500px;
   }
 
   .header_grid {
@@ -182,7 +281,6 @@
   }
 }
 
-/* Mobile devices (≤768px) */
 @media screen and (max-width: 768px) {
   .header_container {
     height: auto;
@@ -208,7 +306,7 @@
     justify-content: center;
     flex-direction: column;
     inset: 0;
-    z-index: 10;
+    z-index: 50;
   }
 
   .doee {
@@ -219,8 +317,9 @@
   .mobile-nav-icon {
     display: flex;
     position: fixed;
-    z-index: 100;
+    z-index: 60;
     top: 20px;
+    right: 20px;
   }
   .don {
     display: none;
@@ -253,7 +352,12 @@
   .point {
     font-size: 20px;
   }
-
+  .dance {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .date_bottom {
     position: static;
     margin-top: 20px;
@@ -266,11 +370,10 @@
   }
 }
 
-/* Extra small devices (≤480px) */
 @media screen and (max-width: 480px) {
   .header_container {
     padding: 70px 10px;
-  background-position: center 100%;
+    background-position: center 100%;
   }
 
   .couplers {
