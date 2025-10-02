@@ -26,11 +26,23 @@ const Regalo = () => {
           </p>
 
           <p className="bur  cami">
-            <div className="iui">
-              <p className="tu">iban:</p>
+            <div
+              className="iui"
+              style={{ display: "flex", flexDirection: "column" }}
+            >
+              <p className="tu">iban :</p>
               <span className="jor">IT51O0623003413000057461581</span>
             </div>
             <br />
+            <div
+              className="iui"
+              style={{ display: "flex", flexDirection: "column" }}
+            >
+              <p className="tu">INTESTATO : </p>
+              <span className="jor">
+                Maria Rosaria Lamino e Vincenzo Manuguerra
+              </span>
+            </div>
             {/* intestato : */}
           </p>
         </div>

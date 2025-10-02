@@ -182,19 +182,25 @@ const Header = () => {
           <div className="doee">
             <div
               className="mobile-nav_list"
-              onClick={() => scrollToSection("dettagli", () => setMobileMenuOpen(false))}
+              onClick={() =>
+                scrollToSection("dettagli", () => setMobileMenuOpen(false))
+              }
             >
               DETTAGLI
             </div>
             <div
               className="mobile-nav_list"
-              onClick={() => scrollToSection("regalo", () => setMobileMenuOpen(false))}
+              onClick={() =>
+                scrollToSection("regalo", () => setMobileMenuOpen(false))
+              }
             >
               REGALO
             </div>
             <div
               className="mobile-nav_list"
-              onClick={() => scrollToSection("album", () => setMobileMenuOpen(false))}
+              onClick={() =>
+                scrollToSection("album", () => setMobileMenuOpen(false))
+              }
             >
               FOTO
             </div>
@@ -237,7 +243,9 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="header_sub don">{/* optional image or decoration */}</div>
+        <div className="header_sub don">
+          {/* optional image or decoration */}
+        </div>
       </div>
 
       {/* Date Section */}
@@ -290,8 +298,6 @@ const Header = () => {
         >
           ›
         </button>
-
-    
       </div>
     </header>
   );

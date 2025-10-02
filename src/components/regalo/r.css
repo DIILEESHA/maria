@@ -48,6 +48,7 @@
 .jor {
   font-size: 23px;
   margin: 0 5px;
+  text-align: center;
   font-family: "poppins", sans-serif;
 }
 .sorted_img {
@@ -118,8 +119,8 @@
     text-align: center;
   }
   .jor {
-    font-size: 20px;
-    font-size: 20px !important;
+    font-size: 17px;
+    
   }
   .sorted_img {
     width: 120px;
@@ -200,6 +201,7 @@
   }
   .jor {
     font-size: 17px !important;
+    text-align: center;
   }
   .sorted_img {
     width: 80px;
