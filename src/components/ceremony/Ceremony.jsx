@@ -26,7 +26,18 @@ const Ceremony = () => {
 
           <p className="bur">Piazza della Repubblica , Sant’ Antimo (NA)</p>
 
-          <button className="btn">google maps</button>
+          <button className="btn">
+
+
+    <a
+                target="_blank"
+                style={{ color: "inherit", textDecoration: "none" }}
+                href="https://share.google/QRvMf0yIpif1r1F1U"
+              >
+                google maps
+              </a>
+
+          </button>
         </div>
       </div>
     </div>

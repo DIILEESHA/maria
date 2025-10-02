@@ -30,9 +30,17 @@ const Location = () => {
           <p className="main_title taami">Castello di Faicchio</p>
 
           <p className="bur">Via Roma , Faicchio (BN)</p>
-          <br/>
+          <br />
 
-          <button className="btn san">google maps</button>
+          <button className="btn san">
+            <a
+              target="_blank"
+              style={{ color: "inherit", textDecoration: "none" }}
+              href="https://share.google/QRvMf0yIpif1r1F1U"
+            >
+              google maps
+            </a>
+          </button>
         </div>
         <div className="cer_sub hhp"></div>
       </div>

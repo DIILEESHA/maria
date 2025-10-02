@@ -23,7 +23,7 @@ const Bottom = () => {
           <h2 className="cer_title cho ">
             Maria Rosaria
             <br />
-            <span className="ppu">&</span>
+            <span className="couplers">&</span>
             Vincenzo
           </h2>
         </div>

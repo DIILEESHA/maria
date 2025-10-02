@@ -46,9 +46,17 @@ const Regalo = () => {
           <p className="bur sami pami">
             durante la giornata di festa hai scattato qualche foto? caricale qui
           </p>
-          <br/>
+          <br />
           <div className="pppp ">
-            <button className="btn sss">CARICA FOTO</button>
+            <button className="btn sss">
+              <a
+                target="_blank"
+                style={{ color: "inherit", textDecoration: "none" }}
+                href="https://drive.google.com/drive/folders/15dvGqdVIwKNDYtT2NZxOV9j3WMYbJUmi?usp=sharing"
+              >
+                CARICA FOTO
+              </a>
+            </button>
           </div>
         </div>
 
