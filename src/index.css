@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+:root {
+  --red: #911a1d;
+  --white: #fff;
+}
+@font-face {
+  font-family: "wed";
+  src: url("../public/fonts/wed.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "bur";
+  src: url("../public/fonts/bur.otf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "hlo";
+  src: url("../public/fonts/hlo.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "ssn";
+  src: url("../public/fonts/season.otf") format("truetype");
+  font-style: normal;
+}
+
+.balpi {
+  background-color: var(--red);
+  color: #fff;
+}
+.ppu {
+  font-family: "bur" !important;
+}
+.cho {
+  margin-top: 30px;
+  line-height: 200%;
+}

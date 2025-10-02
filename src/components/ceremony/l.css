@@ -1,0 +1,137 @@
+.bb {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 130vh;
+  color: var(--red);
+  background-color: transparent;
+  overflow: hidden; /* prevent pseudo element from overflowing */
+}
+
+.bb::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-image: url("https://i.imgur.com/QvM7ysi.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  filter: blur(2px); /* blur ONLY the background */
+  z-index: -1; /* push behind content */
+}
+.toto {
+  grid-template-columns: 1fr 1fr !important;
+  gap: 0 !important;
+
+  position: absolute;
+  bottom: -40px;
+}
+
+.jasp {
+  text-align: right;
+  color: var(--red);
+}
+.vol {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.san {
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+/* Tablets (≤1024px) */
+@media screen and (max-width: 1024px) {
+  .bb {
+    height: auto; /* let content dictate height */
+    padding: 40px 20px;
+  }
+
+  .bb::before {
+    filter: blur(1.5px);
+  }
+
+  .toto {
+    grid-template-columns: 1fr 1fr !important;
+    position: static; /* avoid absolute overflow */
+    gap: 20px !important;
+    margin-top: 20px;
+  }
+
+  .jasp {
+    text-align: center;
+  }
+
+  .vol {
+    font-size: 22px;
+  }
+
+  .san {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+}
+
+/* Mobile devices (≤768px) */
+@media screen and (max-width: 768px) {
+  .bb {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .bb::before {
+    filter: blur(1px);
+  }
+
+  .toto {
+    grid-template-columns: 1fr !important; /* stack items vertically */
+    gap: 15px !important;
+    position: static;
+    margin-top: 15px;
+  }
+
+  .jasp {
+    text-align: center;
+  }
+
+  .vol {
+    font-size: 20px;
+  }
+
+  .san {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+}
+
+/* Extra small devices (≤480px) */
+@media screen and (max-width: 480px) {
+  .bb {
+    padding: 20px 10px;
+  }
+
+  .bb::before {
+    filter: blur(0.8px);
+  }
+
+  .toto {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .vol {
+    font-size: 18px;
+  }
+
+  .san {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+}

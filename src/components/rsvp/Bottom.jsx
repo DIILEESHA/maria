@@ -1,0 +1,35 @@
+import React from "react";
+
+const Bottom = () => {
+  return (
+    <div className="balpi">
+      <div className="regalo_grid">
+        <div className="regalo_sub">
+          <img
+            src="https://i.imgur.com/2sOtSEW.png"
+            alt=""
+            className="regalo_img"
+          />
+        </div>
+        <div className="regalo_sub tom">
+          <p className="bur sami">
+            We can't wait to
+            <br />
+            share our
+            <br />
+            most important milestone with you.
+          </p>
+          <br />
+          <h2 className="cer_title cho ">
+            Maria Rosaria
+            <br />
+            <span className="ppu">&</span>
+            Vincenzo
+          </h2>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Bottom;

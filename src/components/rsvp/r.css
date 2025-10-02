@@ -1,0 +1,188 @@
+.rsvp {
+  background-color: #fff;
+  color: var(--red);
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: -3px;
+}
+
+.rsvp_grid {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.tower {
+  display: flex;
+}
+
+.habiyo {
+  font-size: 70px;
+  line-height: 150%;
+  color: var(--red);
+
+  margin-bottom: 50px;
+}
+.sure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rsvp_form {
+  background-color: var(--red);
+  padding: 50px;
+  color: #fff;
+}
+
+.tower {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.rsvp_inout {
+  width: 20px;
+  height: 20px;
+}
+
+.tower_sec {
+  display: flex;
+  gap: 10px;
+  /* align-items: center; */
+}
+
+.rsvp_label {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-family: "bur";
+}
+.inputers {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.input_other {
+  padding: 13px 15px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.input_other::placeholder {
+  font-family: "bur";
+  font-size: 12px;
+  color: var(--red);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hhh {
+  font-size: 15px !important;
+}
+/* Tablets (≤1024px) */
+@media screen and (max-width: 1024px) {
+  .rsvp_grid {
+    grid-template-columns: 1fr; /* stack columns vertically */
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .habiyo {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+
+  .rsvp_form {
+    padding: 40px;
+  }
+
+  .tower {
+    grid-template-columns: 1fr; /* stack inputs vertically */
+    gap: 15px;
+  }
+
+  .rsvp_label {
+    font-size: 18px;
+  }
+
+  .input_other {
+    padding: 12px 14px;
+  }
+
+  .input_other::placeholder {
+    font-size: 11px;
+  }
+}
+
+/* Mobile devices (≤768px) */
+@media screen and (max-width: 768px) {
+  .rsvp_grid {
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .habiyo {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .rsvp_form {
+    padding: 30px 20px;
+  }
+
+  .tower {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .rsvp_label {
+    font-size: 16px;
+  }
+
+  .input_other {
+    padding: 10px 12px;
+  }
+
+  .input_other::placeholder {
+    font-size: 10px;
+  }
+}
+
+/* Extra small devices (≤480px) */
+@media screen and (max-width: 480px) {
+  .rsvp_grid {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  .habiyo {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .rsvp_form {
+    padding: 20px 15px;
+  }
+
+  .tower {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .rsvp_label {
+    font-size: 14px;
+  }
+
+  .input_other {
+    padding: 8px 10px;
+  }
+
+  .input_other::placeholder {
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,189 @@
+.regalo {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  background-color: var(--red);
+  color: #fff;
+}
+.regalo_grid {
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.regalo_sub {
+  text-align: center;
+}
+.regalo_img {
+  width: 100%;
+}
+.tom {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 0px 30px;
+}
+.sami {
+  font-size: 20px;
+  line-height: 150%;
+  margin: 0 auto;
+  /* width: 80%; */
+}
+.cami {
+  margin-top: 40px;
+  text-transform: uppercase;
+  line-height: 200%;
+  font-size: 20px;
+  text-align: left;
+}
+.sorted_img {
+  width: 150px;
+}
+
+.ppp {
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.io {
+  margin-top: -4px;
+}
+
+.ttom {
+}
+.pami {
+  width: 70%;
+}
+
+.sss {
+  width: 80%;
+}
+
+.pppp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+/* Tablets (≤1024px) */
+@media screen and (max-width: 1024px) {
+  .regalo_grid {
+    grid-template-columns: 1fr; /* stack columns vertically */
+    gap: 30px;
+  }
+
+  .regalo_sub {
+    text-align: center;
+  }
+
+  .tom {
+    padding: 0 20px;
+  }
+
+  .sami {
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  .cami {
+    font-size: 18px;
+    line-height: 180%;
+    text-align: center;
+  }
+
+  .sorted_img {
+    width: 120px;
+  }
+
+  .pami {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .sss {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .pppp {
+    margin-bottom: 60px;
+  }
+}
+
+/* Mobile devices (≤768px) */
+@media screen and (max-width: 768px) {
+  .regalo_grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 20px;
+  }
+
+  .io{
+    display:flex;
+    margin-top:40px;
+    flex-direction:column-reverse;
+  }
+
+  .tom {
+    padding: 0 15px;
+  }
+
+  .sami {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .cami {
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .sorted_img {
+    width: 100px;
+  }
+
+  .pami {
+    width: 90%;
+  }
+
+  .sss {
+    width: 100%;
+  }
+
+  .pppp {
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+}
+
+/* Extra small devices (≤480px) */
+@media screen and (max-width: 480px) {
+  .tom {
+    padding: 0 10px;
+  }
+
+  .sami {
+    font-size: 14px;
+  }
+
+  .cami {
+    font-size: 14px;
+  }
+
+  .sorted_img {
+    width: 80px;
+  }
+
+  .pami {
+    width: 100%;
+  }
+
+  .sss {
+    width: 100%;
+  }
+
+  .pppp {
+    margin-bottom: 30px;
+  }
+}
