@@ -30,6 +30,7 @@ const Location = () => {
           <p className="main_title taami">Castello di Faicchio</p>
 
           <p className="bur">Via Roma , Faicchio (BN)</p>
+          <br/>
 
           <button className="btn san">google maps</button>
         </div>

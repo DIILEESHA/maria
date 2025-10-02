@@ -46,6 +46,7 @@ const Regalo = () => {
           <p className="bur sami pami">
             durante la giornata di festa hai scattato qualche foto? caricale qui
           </p>
+          <br/>
           <div className="pppp ">
             <button className="btn sss">CARICA FOTO</button>
           </div>
