@@ -38,7 +38,7 @@
   /* font-family: "lato"; */
   text-align: left;
 }
-.iui{
+.iui {
   /* margin-bottom: -30px; */
   text-align: left;
 }
@@ -99,12 +99,14 @@
   .tom {
     padding: 0 20px;
   }
-.iui{
-  /* margin-bottom: -30px; */
-  text-align: left;
-  display: flex;align-items: center;justify-content: center;
-  flex-direction: column;
-}
+  .iui {
+    /* margin-bottom: -30px; */
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   .sami {
     font-size: 18px;
     line-height: 140%;
@@ -197,7 +199,7 @@
     font-size: 14px;
   }
   .jor {
-    font-size: 1px !important;
+    font-size: 17px !important;
   }
   .sorted_img {
     width: 80px;
