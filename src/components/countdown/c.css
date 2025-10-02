@@ -98,6 +98,10 @@
     font-size: 40px;
   }
 
+  .count_img {
+    width: 20%;
+  }
+
   .count_grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
@@ -131,10 +135,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
-.per{
-  grid-column: 1 /3 ; /* first column */
-
-}
+  .per {
+    grid-column: 1 /3; /* first column */
+  }
   .count_date {
     font-size: 36px;
   }

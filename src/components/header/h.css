@@ -191,7 +191,10 @@
   .desktop-nav {
     display: none;
   }
-
+  .header_top,
+  .header_toper {
+    display: none;
+  }
   .mobile-nav-menu {
     background-color: #fff;
     color: #333;
@@ -208,8 +211,9 @@
     z-index: 10;
   }
 
-  .doee{
-    display: flex;flex-direction: column;
+  .doee {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
   .mobile-nav-icon {
